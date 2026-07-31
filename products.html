@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="金海康产品中心——15大产品系列，覆盖母婴、儿童、成人、女性及特殊人群，包括调制乳粉、特膳营养包、婴幼儿特膳饮、调制乳片等特殊膳食营养食品。">
+  <title>产品中心 | 金海康 JINHAIKANG</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230A2A4A'/><text y='72' x='50' text-anchor='middle' font-size='60' font-weight='900' fill='%23C9963A' font-family='serif'>J</text></svg>">
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-inner">
+        <div class="topbar-left">
+          <span class="topbar-item">📞 400-888-8888</span>
+          <span class="topbar-item">✉️ info@jinhaikang.com</span>
+        </div>
+        <div class="topbar-right">
+          <a href="contact.html">在线询价</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">J</div>
+          <div class="logo-text"><span class="logo-name">金海康</span><span class="logo-sub">JINHAIKANG</span></div>
+        </a>
+        <nav class="nav">
+          <a href="index.html">首页</a>
+          <a href="about.html">关于我们</a>
+          <a href="products.html" class="active">产品中心</a>
+          <a href="news.html">新闻动态</a>
+          <a href="contact.html">联系我们</a>
+        </nav>
+        <div class="header-cta">
+          <a href="contact.html" class="btn btn-primary">立即询价</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <div class="page-header-inner">
+        <div class="breadcrumb"><a href="index.html">首页</a> / <span>产品中心</span></div>
+        <h1>产品中心</h1>
+        <p>15大产品系列，覆盖全年龄段特殊膳食营养需求</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="products-filter">
+        <button class="filter-btn active" onclick="filterProducts('all', this)">全部</button>
+        <button class="filter-btn" onclick="filterProducts('milk', this)">乳粉系列</button>
+        <button class="filter-btn" onclick="filterProducts('special', this)">特膳营养包</button>
+        <button class="filter-btn" onclick="filterProducts('drink', this)">特膳饮</button>
+        <button class="filter-btn" onclick="filterProducts('tablet', this)">乳片系列</button>
+        <button class="filter-btn" onclick="filterProducts('other', this)">其他</button>
+      </div>
+
+      <div class="products-full-grid" id="productsGrid">
+        <!-- Row 1 -->
+        <div class="product-card" data-cat="milk">
+          <div class="product-img">
+            🍼
+            <span class="product-tag">GB 19644</span>
+          </div>
+          <div class="product-body">
+            <div class="product-category">调制乳粉系列</div>
+            <div class="product-name">成人功能性奶粉</div>
+            <div class="product-desc">中老年高钙奶粉、益生菌奶粉、DHA藻油奶粉，适用于三高人群、骨质疏松、免疫力低下人群。</div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="milk">
+          <div class="product-img">
+            🍼
+            <span class="product-tag">GB 19644</span>
+          </div>
+          <div class="product-body">
+            <div class="product-category">调制乳粉系列</div>
+            <div class="product-name">儿童成长奶粉</div>
+            <div class="product-desc">专为3-15岁儿童设计，含钙铁锌硒、DHA、益生元，支持骨骼与大脑发育。</div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="special">
+          <div class="product-img">
+            🍼
+            <span class="product-tag">GB 22570</span>
+          </div>
+          <div class="product-body">
+            <div class="product-category">特膳营养包系列</div>
+            <div class="product-name">婴幼儿辅食营养补充包</div>
+            <div class="product-desc">符合GB 22570，含铁、锌、钙、维生素A/C/D等多种微量营养素，科学配比。</div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="special">
+          <div class="product-img">
+            🍼
+            <span class="product-tag">GB 22570</span>
+          </div>
+          <div class="product-body">
+            <div class="product-category">益生菌营养包系列</div>
+            <div class="product-name">婴幼儿益生菌特膳营养包</div>
+            <div class="product-desc">精选婴幼儿可食用菌株，添加益生元，调节肠道微生态，提升免疫力。</div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="special">
+          <div class="product-img">
+            🍼
+            <span class="product-tag">GB 22570</span>
+          </div>
+          <div class="product-body">
+            <div class="product-category">婴幼儿撒剂系列</div>
+            <div class="product-name">药食同源特膳撒剂</div>
+            <div class="product-desc">山楂、陈皮、鸡内金等药食同源成分，适合辅食添加期婴幼儿，调理脾胃。</div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="special">
+          <div class="product-img">
+            🤰
+            <span class="product-tag">GB 31601</span>
+          </div>
+          <div class="product-body">
+            <div class="product-category">孕妇及乳母系列</div>
+            <div class="product-name">孕产妇特膳营养包</div>
+            <div class="product-desc">孕期及哺乳期专用，含叶酸、铁、钙、DHA、燕窝酸等关键营养素。</div>
+          </div>
+        </div>
+        <!-- Row 2 -->
+        <div class="product-card" data-cat="tablet">
+          <div class="product-img">
+            💊
+            <span class="product-tag">企标</span>
+          </div>
+          <div class="product-body">
+            <div class="product-category">调制乳片系列</div>
+            <div class="product-name">功能性营养乳片</div>
+            <div class="product-desc">独立包装，便于携带，涵盖维矿类、DHA藻油、益生菌、乳铁蛋白等多品类。</div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="tablet">
+          <div class="product-img">
+            💊
+            <span class="product-tag">GB 22570</span>
+          </div>
+          <div class="product-body">
+            <div class="product-category">婴幼儿辅食营养补充片</div>
+            <div class="product-name">婴儿咀嚼营养片</div>
+            <div class="product-desc">适合6月龄以上婴幼儿，含铁、锌、钙及多种维生素，口感好，易吞咽。</div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="drink">
+          <div class="product-img">
+            🍼
+            <span class="product-tag">GB 10770</span>
+          </div>
+          <div class="product-body">
+            <div class="product-category">婴幼儿特膳饮系列</div>
+            <div class="product-name">婴幼儿流质特膳营养品</div>
+            <div class="product-desc">2-30mL小规格，婴儿专用流质食品，适合不同月龄段，喂养方便。</div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="drink">
+          <div class="product-img">
+            🍼
+            <span class="product-tag">GB 10770</span>
+          </div>
+          <div class="product-body">
+            <div class="product-category">药食同源特膳饮系列</div>
+            <div class="product-name">婴幼儿药食同源特膳饮</div>
+            <div class="product-desc">以药食同源食材为基料，温和调理，专为婴幼儿开发的特殊膳食饮品。</div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="drink">
+          <div class="product-img">
+            🍼
+            <span class="product-tag">GB 10770</span>
+          </div>
+          <div class="product-body">
+            <div class="product-category">米蛋白流质营养系列</div>
+            <div class="product-name">婴幼儿米蛋白流质营养品</div>
+            <div class="product-desc">以大米蛋白为主要蛋白来源，适合对乳制品过敏的婴幼儿，低敏配方。</div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="drink">
+          <div class="product-img">
+            🍹
+            <span class="product-tag">GB 24154</span>
+          </div>
+          <div class="product-body">
+            <div class="product-category">四季特膳饮系列</div>
+            <div class="product-name">季节性精准营养特膳饮</div>
+            <div class="product-desc">根据春、夏、秋、冬不同季节生理需求，精准补充应季营养素。</div>
+          </div>
+        </div>
+        <!-- Row 3 -->
+        <div class="product-card" data-cat="drink">
+          <div class="product-img">
+            🍹
+            <span class="product-tag">GB 24154</span>
+          </div>
+          <div class="product-body">
+            <div class="product-category">维矿类特膳饮系列</div>
+            <div class="product-name">维矿精准补充特膳饮</div>
+            <div class="product-desc">富含多种维生素与矿物质，小瓶装，吸收率高，满足特定人群营养需求。</div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="drink">
+          <div class="product-img">
+            🍹
+            <span class="product-tag">GB 24154</span>
+          </div>
+          <div class="product-body">
+            <div class="product-category">女性营养特膳饮系列</div>
+            <div class="product-name">女性专属精准营养特膳饮</div>
+            <div class="product-desc">专为女性设计，含胶原蛋白、铁、叶酸、维生素E等，支持美颜与健康。</div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="other">
+          <div class="product-img">
+            🍶
+            <span class="product-tag">GB 7101</span>
+          </div>
+          <div class="product-body">
+            <div class="product-category">其它饮品系列</div>
+            <div class="product-name">特殊膳食固体饮料</div>
+            <div class="product-desc">以特殊膳食为主要形态的固体饮料，冲调方便，口感好，符合GB 7101标准。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-inner">
+        <h2>需要定制产品？</h2>
+        <p>金海康支持OEM/ODM全流程定制，从配方到包装，一站式服务。</p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn btn-primary">获取定制方案 →</a>
+          <a href="about.html" class="btn btn-outline">了解更多</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-text" style="margin-bottom:0;"><span class="logo-name">金海康</span><span class="logo-sub">JINHAIKANG</span></div>
+          <p>专注特殊膳食营养食品OEM/ODM，以科技守护生命营养。</p>
+          <div class="footer-social"><a href="#">💬</a><a href="#">🎵</a><a href="#">📱</a></div>
+        </div>
+        <div>
+          <div class="footer-title">快速导航</div>
+          <ul class="footer-links">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="products.html">产品中心</a></li>
+            <li><a href="news.html">新闻动态</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-title">产品分类</div>
+          <ul class="footer-links">
+            <li><a href="products.html">调制乳粉系列</a></li>
+            <li><a href="products.html">特膳营养包系列</a></li>
+            <li><a href="products.html">婴幼儿特膳饮系列</a></li>
+            <li><a href="products.html">调制乳片系列</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-title">联系我们</div>
+          <div class="footer-contact-item"><div class="footer-contact-icon">📞</div><div><div style="font-size:0.75rem;color:rgba(255,255,255,0.4);">电话</div><div>400-888-8888</div></div></div>
+          <div class="footer-contact-item"><div class="footer-contact-icon">📧</div><div><div style="font-size:0.75rem;color:rgba(255,255,255,0.4);">邮箱</div><div>info@jinhaikang.com</div></div></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2024 广东金海康医学营养品股份有限公司 版权所有</span>
+        <span><a href="#">隐私政策</a> · <a href="#">使用条款</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    function filterProducts(category, btn) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('#productsGrid .product-card').forEach(card => {
+        if (category === 'all' || card.dataset.cat === category) {
+          card.style.display = '';
+          card.style.animation = 'fadeSlideUp 0.4s ease both';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
